@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Owl.Homie.Domain
 {
     [Table(("Bro"))]
-    public class Bro : WeChatProfile
+    public class Bro : WxUserInfo
     {
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
@@ -14,13 +14,19 @@ namespace Owl.Homie.Domain
         public int Index { get; set; }
         public bool IsNext { get; set; }
         public int BeUrged { get; set; }
+        public string WxKeyWord { get; set; }
         public AccountStatus AccountStatus { get; set; }
     }
 
-    public class WeChatProfile
+    public class WxUserInfo
     {
         public string Wx_openId { get; set; }
-        public string Wx_userinfo { get; set; }
+        public string Wx_nickName { get; set; }
+        public string Wx_avatarUrl { get; set; }
+        public int Wx_gender { get; set; }
+        public string Wx_province { get; set; }
+        public string Wx_city { get; set; }
+        public string Wx_country { get; set; }
     }
 
     public enum AccountStatus
