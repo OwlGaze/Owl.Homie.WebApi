@@ -8,7 +8,7 @@ namespace Owl.Homie.Domain
     public class Bro : WeChatProfile
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
         public string Name { get; set; }
         public string NickName { get; set; }
         public int Index { get; set; }
