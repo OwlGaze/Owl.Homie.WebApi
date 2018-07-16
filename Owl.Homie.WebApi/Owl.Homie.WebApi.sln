@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owl.Homie.WebApi", "Owl.Homie.WebApi\Owl.Homie.WebApi.csproj", "{50A11DAD-1FFD-4F0C-B927-7EBCB9EF3439}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owl.Homie.WebApi", "Owl.Homie.WebApi\Owl.Homie.WebApi.csproj", "{50A11DAD-1FFD-4F0C-B927-7EBCB9EF3439}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owl.Homie.Application", "Owl.Homie.Application\Owl.Homie.Application.csproj", "{2EB4C2F1-6C2E-4FF4-B76D-69DF9E78EEA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Owl.Homie.Domain", "Owl.Homie.Domain\Owl.Homie.Domain.csproj", "{C81FE1AF-63D1-4BF7-84D1-63804FD2842F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owl.Homie.Application.DTO", "Owl.Homie.Application.DTO\Owl.Homie.Application.DTO.csproj", "{14EE1F81-E4F7-4077-B735-F113423AACC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{50A11DAD-1FFD-4F0C-B927-7EBCB9EF3439}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50A11DAD-1FFD-4F0C-B927-7EBCB9EF3439}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50A11DAD-1FFD-4F0C-B927-7EBCB9EF3439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EB4C2F1-6C2E-4FF4-B76D-69DF9E78EEA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EB4C2F1-6C2E-4FF4-B76D-69DF9E78EEA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EB4C2F1-6C2E-4FF4-B76D-69DF9E78EEA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EB4C2F1-6C2E-4FF4-B76D-69DF9E78EEA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C81FE1AF-63D1-4BF7-84D1-63804FD2842F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C81FE1AF-63D1-4BF7-84D1-63804FD2842F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C81FE1AF-63D1-4BF7-84D1-63804FD2842F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C81FE1AF-63D1-4BF7-84D1-63804FD2842F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EE1F81-E4F7-4077-B735-F113423AACC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EE1F81-E4F7-4077-B735-F113423AACC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EE1F81-E4F7-4077-B735-F113423AACC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EE1F81-E4F7-4077-B735-F113423AACC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
