@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Owl.Homie.Application.DTO\Owl.Homie.Application.DTO.csproj" />
-    <ProjectReference Include="..\Owl.Homie.Domain\Owl.Homie.Domain.csproj" />
+    <ProjectReference Include="..\Owl.Homie.Repository\Owl.Homie.Repository.csproj" />
   </ItemGroup>
 
 </Project>

@@ -3,30 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Owl.Homie.Domain;
+using Owl.Homie.Repository;
 
 namespace Owl.Homie.Application
 {
     public class BroService : IBroService
     {
-        private readonly HomieDbContext _db;
+        private readonly IBroRepository _broRepository;
 
-        public BroService(HomieDbContext db)
+        public BroService(IBroRepository broRepository)
         {
-            this._db = db;
+            this._broRepository = broRepository;
         }
-        public Bro Get(Guid id)
-        {
-            return _db.Bros.Find(id);
-        }
-
-        public Bro GetByOpenId(string openId)
-        {
-            return _db.Bros.Single(d => d.Wx_openId == openId);
-        }
-
-        public Bro GetByKeyWord(string keyword)
-        {
-            return _db.Bros.Single(d => d.WxKeyWord == keyword);
-        }
+       
     }
 }

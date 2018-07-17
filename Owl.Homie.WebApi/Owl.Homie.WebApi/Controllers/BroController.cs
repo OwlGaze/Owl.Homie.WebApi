@@ -15,27 +15,27 @@ namespace Owl.Homie.WebApi.Controllers
         {
             this._broService = broService;
         }
-        [HttpGet("{id:guid}")]
-        public IActionResult Get(Guid id)
-        {
-            return Ok(_broService.Get(id));
-        }
+        //[HttpGet("{id:guid}")]
+        //public IActionResult Get(Guid id)
+        //{
+        //    return Ok(_broService.Get(id));
+        //}
 
-        [HttpGet("{openid}")]
-        public IActionResult GetByOpenId(string openId)
-        {
-            if (string.IsNullOrEmpty(openId))
-                return BadRequest();
-            return Ok(_broService.GetByOpenId(openId));
-        }
+        //[HttpGet("{openid}")]
+        //public IActionResult GetByOpenId(string openId)
+        //{
+        //    if (string.IsNullOrEmpty(openId))
+        //        return BadRequest();
+        //    return Ok(_broService.GetByOpenId(openId));
+        //}
 
-        [HttpGet("{keyword}")]
-        public IActionResult GetByKeyWord(string keyword)
-        {
-            if (string.IsNullOrEmpty(keyword))
-                return BadRequest();
-            return Ok(_broService.GetByKeyWord(keyword));
-        }
+        //[HttpGet("{keyword}")]
+        //public IActionResult GetByKeyWord(string keyword)
+        //{
+        //    if (string.IsNullOrEmpty(keyword))
+        //        return BadRequest();
+        //    return Ok(_broService.GetByKeyWord(keyword));
+        //}
 
 
     }
